@@ -1,16 +1,54 @@
-# React + Vite
+# Personal Expense Tracker
+A simple and responsive "React Application" that allows users to track their personal expenses.It supports adding,deleting, filtering expenses and persists data using localstorage.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+https://expense-track-ing.netlify.app/
 
-Currently, two official plugins are available:
+## GitHub Repo Link
+https://github.com/91465234/Expense-Tracker
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Add expenses with amount,category and date
+- Input validation for empty or invalid values
+- Display all expenses list
+- Delete individual expenses
+- View total expenses
+- Filter expenses by category
+- Data persistence using LocalStorage
+- Responsive UI
 
-## React Compiler
+## Tech Stack
+- React
+- Vite
+- JavaScript
+- Css(Flexbox & media queries)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
+src/
+┣ components/
+┃ ┣ ExpenseForm.jsx
+┃ ┣ ExpeneList.jsx
+┃ ┣ ExpenseSummary.jsx
+┃ ┗ Filter.jsx
+┣ App.jsx
+┣ App.css
+┗ main.jsx
 
-## Expanding the ESLint configuration
+## Go to Project folder
+cd expense-tack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Install dependencies
+npm install
+
+## Start the App
+npm run dev
+
+## Build for production
+npm run build
+
+## Assumptions
+- Categories are predefined and limited to Food, Travel, Shopping, and Other.
+- Editing an existing expense is not included as it was not part of the core requirements.
+- Currency is assumed to be INR (₹).
+- The application is intended for single-user personal tracking.
+
